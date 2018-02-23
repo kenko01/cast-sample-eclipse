@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent_color">#00000000</color>
+    <color name="cast_colorPrimary">#ffffff</color>
+    <color name="cast_textPrimary">#88000000</color>
+    <color name="cast_gray_ee">#eeeeee</color>
+    <color name="cast_gray_line">#cfcfcf</color>
+    <color name="cast_accent">#15B1F9</color>
+</resources>

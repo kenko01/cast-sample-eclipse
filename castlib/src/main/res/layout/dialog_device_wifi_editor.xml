@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?><!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:fillViewport="true">-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/cast_shape_backgroud"
+    android:orientation="vertical">
+    <include layout="@layout/layout_dialog_title"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="15dp"
+        android:background="@color/transparent_color"
+        android:layout_marginLeft="@dimen/cast_margin_left"
+        android:layout_marginRight="18dp"
+        >
+        <TextView android:id="@+id/tv_label_wifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/cast_wifi_m"
+            android:textColor="#000000"
+            android:background="@color/transparent_color"
+            android:layout_marginRight="5dp"
+            android:textSize="15sp" />
+        <Spinner
+            android:id="@+id/cast_wifi_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:popupBackground="@drawable/cast_shape_rect_white"
+            android:spinnerMode="dropdown"
+            android:background="@drawable/cast_bg_wifi_spinner"
+            />
+        <TextView
+            android:id="@+id/ready_connect_ssid_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:gravity="center_horizontal"
+            android:textColor="#598CC9"
+            android:background="@color/transparent_color"
+            android:lines="1"
+            android:visibility="gone"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/ssid_ll"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:visibility="gone">-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/ssid_edt"-->
+            <!--style="@style/SetWifiEditText"-->
+            <!--android:hint="Wi-Fi Password" />-->
+    <!--</LinearLayout>-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/cast_margin_left"
+        android:layout_marginRight="@dimen/cast_margin_left"
+        android:gravity="center_vertical"
+        android:background="@color/transparent_color"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/password_edt"
+            style="@style/Cast_SetWifiEditText"
+            android:hint="Password"
+            android:layout_gravity="center_vertical"
+            android:inputType="textPassword" />
+        <ImageView android:id="@+id/iv_see_psw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cast_selector_password"
+            android:background="@color/transparent_color"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="5dp"
+            />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/cast_margin_left"
+        android:layout_marginRight="@dimen/cast_margin_left"
+        android:gravity="center_vertical"
+        android:background="@color/transparent_color"
+        android:orientation="horizontal">
+        <!--android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"-->
+        <!--android:imeOptions="actionDone"-->
+        <EditText
+            android:id="@+id/tv_name_edt"
+            style="@style/Cast_SetWifiEditText"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:hint="Name Your Device"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textCursorDrawable="@drawable/cast_cursor_color" />
+    </LinearLayout>
+
+    <!--<Button-->
+        <!--android:id="@+id/ok_btn"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_margin="20dp"-->
+        <!--android:background="@drawacast_selector_next_stepstep"-->
+        <!--android:paddingLeft="45dp"-->
+        <!--android:paddingRight="45dp"-->
+        <!--android:text="@string/cast_connect"-->
+        <!--android:textColor="#000000"-->
+        <!--android:textSize="15sp" />-->
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/transparent_color"
+        />
+    <include layout="@layout/layout_bottombtns"></include>
+</LinearLayout><!--</ScrollView>-->

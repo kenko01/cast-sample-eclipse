@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/cast_player_banner_height"
+    android:id="@+id/layout_bottom_media"
+    android:visibility="gone"
+    >
+    <ImageView
+        android:id="@+id/iv_video_cover"
+        android:layout_width="@dimen/cast_player_banner_height"
+        android:layout_height="@dimen/cast_player_banner_height"
+        android:layout_gravity="bottom"
+        android:src="@drawable/cast_bg_avater"
+        android:background="@color/transparent_color"
+        android:scaleType="fitCenter"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cast_player_banner_height"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_gravity="bottom"
+        android:id="@+id/mediainfo_ll"
+        android:background="#ffffff"
+        android:layout_marginLeft="@dimen/cast_player_banner_height"
+        android:paddingLeft="5dp"
+        android:paddingBottom="4dp"
+        >
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/media_name"
+            android:textSize="16sp"
+            android:textColor="@color/cast_textPrimary"
+            android:background="@color/transparent_color"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:singleLine="true"
+            android:text="  "
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/media_author"
+            android:textSize="16sp"
+            android:text="    "
+            android:maxLines="1"
+            android:gravity="right"
+            android:layout_marginTop="1dp"
+            android:textColor="#9b9b9b"
+            android:background="@color/transparent_color"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/cast_player_button_size"
+        android:layout_height="@dimen/cast_player_banner_height"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="15dp"
+        android:background="@color/transparent_color"
+        >
+        <ImageView
+            android:id="@+id/btn_play"
+            android:layout_width="@dimen/cast_player_button_size"
+            android:layout_height="@dimen/cast_player_button_size"
+            android:scaleType="fitCenter"
+            android:src="@drawable/cast_selector_cast_ic_rm_play"
+            android:background="@color/transparent_color"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView
+            android:id="@+id/btn_pause"
+            android:layout_width="@dimen/cast_player_button_size"
+            android:layout_height="@dimen/cast_player_button_size"
+            android:scaleType="fitCenter"
+            android:layout_centerVertical="true"
+            android:src="@drawable/cast_selector_cast_ic_rm_to_pause"
+            android:background="@color/transparent_color"
+             />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/bottom_progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="4dp"
+        android:minHeight="4dp"
+        android:layout_gravity="bottom"
+        android:progressDrawable="@drawable/cast_video_seek_bar_bg"
+        android:progress="0"
+        />
+</FrameLayout>

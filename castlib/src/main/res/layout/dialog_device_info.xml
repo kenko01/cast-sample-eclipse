@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/cast_shape_backgroud"
+    android:gravity="center_horizontal"
+    >
+
+    <include layout="@layout/layout_dialog_title"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/cast_margin_left"
+        android:background="@color/transparent_color"
+        >
+        <FrameLayout
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent_color"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cast_ic_dongle"
+                android:scaleType="fitCenter"
+                android:background="@color/transparent_color"
+                android:layout_gravity="left|center_vertical"
+                />
+        </FrameLayout>
+
+        <TextView android:id="@+id/tv_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/cast_textPrimary"
+            android:background="@color/transparent_color"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cast_ic_rename"
+            android:background="@color/transparent_color"
+            android:layout_marginRight="13dp"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/cast_gray_line"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/cast_margin_left"
+        android:background="@color/transparent_color"
+        >
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/cast_wifi_m"
+            android:textColor="#000000"
+            android:background="@color/transparent_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/device_connect_ssid_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:background="@color/transparent_color"
+            android:textColor="#598CC9"
+            android:lines="1"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/cast_gray_line"></View>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/transparent_color"
+        ></View>
+    <include layout="@layout/layout_bottombtns"></include>
+</LinearLayout>

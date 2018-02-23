@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:gravity="center_vertical"
+    android:id="@+id/layout_dialog_title"
+    android:background="@drawable/cast_shape_backgroud_blue"
+    >
+        <ImageView android:id="@+id/tip_iv"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="@dimen/cast_margin_left"
+            android:layout_centerVertical="true"
+            android:src="@drawable/cast_ic_back"
+            android:background="@color/transparent_color"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tip_tv"
+            android:textColor="#ffffff"
+            android:background="@color/transparent_color"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"/>
+</RelativeLayout>

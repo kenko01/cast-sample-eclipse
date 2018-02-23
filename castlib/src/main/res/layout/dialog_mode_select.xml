@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cast_shape_backgroud"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/layout_dialog_title"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:background="@color/transparent_color"
+        >
+        <LinearLayout android:id="@+id/layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="32dp"
+            android:background="@color/transparent_color"
+            >
+            <ImageView android:id="@+id/btn_wifi"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/cast_ic_step_wifi"
+                android:scaleType="centerCrop"
+                android:background="@color/transparent_color"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cast_wifi_mode"
+                android:textSize="15dp"
+                android:textColor="#A7A9AC"
+                android:layout_marginLeft="32dp"
+                android:background="@color/transparent_color"
+                />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/cast_gray_line"
+            />
+    <LinearLayout android:id="@+id/layout_2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:layout_marginLeft="32dp"
+        android:background="@color/transparent_color"
+        >
+        <ImageView android:id="@+id/btn_4g"
+            android:layout_width="56dp"
+            android:layout_height ="56dp"
+            android:src="@drawable/cast_ic_step_4g"
+            android:scaleType="centerCrop"
+            android:background="@color/transparent_color"
+            />
+        <TextView android:id="@+id/tv_mode_4g"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cast_lte_hotspot"
+            android:textSize="15dp"
+            android:textColor="#A7A9AC"
+            android:layout_marginLeft="32dp"
+            android:background="@color/transparent_color"
+            />
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+

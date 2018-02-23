@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/cast_player_banner_height"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:layout_gravity="bottom"
+    android:id="@+id/frame_bottom_banner"
+    >
+    <fragment android:name="com.memo.uiwidget.FragmentBottomVideo"
+        android:id="@+id/fragment1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cast_player_banner_height"
+        android:layout_gravity="bottom"
+        />
+
+</FrameLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@drawable/cast_shape_backgroud">
+    <!--<LinearLayout android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:paddingTop="20dp"-->
+        <!--android:paddingBottom="20dp">-->
+        <!--<ImageView android:id="@+id/tip_iv"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="20dp"/>-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/tip_tv"-->
+            <!--android:textColor="#9b9b9b"-->
+            <!--android:textSize="20sp"-->
+            <!--android:layout_marginLeft="15dp"/>-->
+    <!--</LinearLayout>-->
+    <include layout="@layout/layout_dialog_title"></include>
+
+    <TextView android:id="@+id/tv_conflict"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#FF635C"
+        android:visibility="gone"
+        android:text="@string/cast_label_conflict"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/transparent_color"
+        />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/content_rv"
+        android:divider="@color/cast_gray_line"
+        android:background="@color/transparent_color"
+        android:dividerHeight="0.5dp"/>
+</LinearLayout>

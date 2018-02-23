@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_device_controll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/cast_shape_backgroud"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cast_shape_backgroud_blue"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="12dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/layout_device_title"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:background="@color/transparent_color"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_device_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="device"
+                android:textColor="#ffffff"
+                android:background="@color/transparent_color"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/btn_change_device"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/cast_ic_to_right"
+                android:background="@color/transparent_color"
+                android:text="@string/cast_change_device"
+                android:gravity="center_vertical"
+                android:textColor="#ffffff"
+                android:drawablePadding="5dp"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/transparent_color"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_video_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="     "
+                android:textColor="#ffffff"
+                android:background="@color/transparent_color"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_video_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="#D1D1D1"
+                android:background="@color/transparent_color"
+                android:textSize="11sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_video_cover"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:src="@drawable/cast_bg_cover"
+        android:background="@color/transparent_color"
+        android:scaleType="centerCrop"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent_color"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/bottom_time_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="00:00"
+            android:textColor="@color/cast_accent"
+            android:background="@color/transparent_color"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/bottom_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:text="00:00"
+            android:textColor="#a7a9ac"
+            android:background="@color/transparent_color"
+            android:textSize="11sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_play_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/transparent_color"
+        android:orientation="horizontal">
+
+        <SeekBar
+            android:id="@+id/bottom_seekbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:maxHeight="4dp"
+            android:minHeight="4dp"
+            android:progressDrawable="@drawable/cast_video_seek_bar_bg"
+            android:background="@color/transparent_color"
+            android:thumb="@drawable/cast_thumb_player"
+            android:thumbOffset="0dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:background="@color/transparent_color"
+        >
+
+        <ImageView
+            android:id="@+id/btn_3"
+            android:layout_width="@dimen/cast_player_button_size"
+            android:layout_height="@dimen/cast_player_button_size"
+            android:scaleType="fitXY"
+            android:background="@color/transparent_color"
+            android:layout_alignLeft="@+id/exit_play_btn"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/exit_play_btn"
+            android:src="@drawable/cast_selector_cast_ic_rm_vless" />
+
+        <ImageView
+            android:id="@+id/btn_1"
+            android:layout_width="@dimen/cast_player_button_size"
+            android:layout_height="@dimen/cast_player_button_size"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:scaleType="fitXY"
+            android:background="@color/transparent_color"
+            android:src="@drawable/cast_selector_cast_ic_rm_vmore" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/cast_player_button_size"
+            android:layout_centerHorizontal="true"
+            android:background="@color/transparent_color"
+            >
+
+            <ImageView
+                android:id="@+id/btn_0"
+                android:layout_width="@dimen/cast_player_button_size"
+                android:layout_height="@dimen/cast_player_button_size"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitCenter"
+                android:background="@color/transparent_color"
+                android:src="@drawable/cast_selector_cast_ic_rm_play" />
+
+            <ImageView
+                android:id="@+id/btn_pause"
+                android:layout_width="@dimen/cast_player_button_size"
+                android:layout_height="@dimen/cast_player_button_size"
+                android:layout_centerInParent="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/cast_selector_cast_ic_rm_to_pause"
+                android:background="@color/transparent_color"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/exit_play_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:text="@string/cast_stop_playing"
+            android:textSize="15sp"
+            android:layout_marginTop="70dp"
+            android:textStyle="bold"
+            android:textColor="@color/cast_accent"
+            android:background="@color/transparent_color" />
+    </RelativeLayout>
+</LinearLayout>
